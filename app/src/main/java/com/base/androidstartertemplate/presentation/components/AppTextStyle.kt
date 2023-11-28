@@ -1,6 +1,5 @@
 package com.base.androidstartertemplate.presentation.components
 
-
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -10,7 +9,7 @@ import com.base.androidstartertemplate.ui.theme.AppTheme
 
 
 @Composable
-fun WelcomeText(text: String, color: Color = Color.Black, modifier: Modifier = Modifier) {
+fun WelcomeText(text: String, color: Color = AppTheme.colors.primary, modifier: Modifier = Modifier) {
     Text(
         text = text,
         style =AppTheme.typography.titleLarge,

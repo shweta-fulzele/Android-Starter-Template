@@ -17,10 +17,11 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.base.androidstartertemplate.presentation.components.WelcomeText
 import com.base.androidstartertemplate.ui.theme.AppTheme
 import com.base.androidstartertemplate.ui.theme.AppTypography
+import com.base.androidstartertemplate.utility.BaseActivity
 import com.base.androidstartertemplate.utility.addExclamation
 import com.google.accompanist.systemuicontroller.rememberSystemUiController
 
-class MainActivity : ComponentActivity() {
+class MainActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
