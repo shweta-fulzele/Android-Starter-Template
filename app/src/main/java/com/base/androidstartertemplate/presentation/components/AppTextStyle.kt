@@ -5,27 +5,22 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.res.stringResource
-import androidx.compose.ui.text.TextStyle
-import com.base.androidstartertemplate.R
 import com.base.androidstartertemplate.presentation.annotation.MultiplePreviews
-import com.base.androidstartertemplate.presentation.extension.h1Medium
+import com.base.androidstartertemplate.ui.theme.AppTheme
 
 
 @Composable
-fun CustomHeadline1(modifier: Modifier = Modifier, text : Int, color: Color = Color.Black) {
+fun WelcomeText(text: String, color: Color = Color.Black, modifier: Modifier = Modifier) {
     Text(
-        text = stringResource(text),
-        style = TextStyle.Default.h1Medium(),
+        text = text,
+        style =AppTheme.typography.titleLarge,
         modifier = modifier,
         color = color
     )
-    
-//    Icon(painter = painterResource(id = Icons.Default.Add), contentDescription = )
 }
 
 @MultiplePreviews()
 @Composable
-fun PreviewTextStyles(){
-    CustomHeadline1(text = R.string.hello)
+fun PreviewTextStyles() {
+    WelcomeText("welcome")
 }
