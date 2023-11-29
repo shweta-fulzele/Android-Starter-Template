@@ -6,7 +6,7 @@ import android.net.wifi.WifiManager
 import android.os.Bundle
 import android.os.PersistableBundle
 import androidx.activity.ComponentActivity
-import com.base.androidstartertemplate.utility.networkstate.NetworkStateReceiver
+import com.base.androidstartertemplate.receiver.NetworkStateReceiver
 open class BaseActivity: ComponentActivity() {
 
     private var networkStateReceiver: NetworkStateReceiver? = null

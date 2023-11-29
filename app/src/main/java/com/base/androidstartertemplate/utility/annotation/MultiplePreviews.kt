@@ -1,5 +1,5 @@
 
-package com.base.androidstartertemplate.presentation.annotation
+package com.base.androidstartertemplate.utility.annotation
 
 import android.content.res.Configuration.UI_MODE_NIGHT_NO
 import androidx.compose.ui.tooling.preview.Preview

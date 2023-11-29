@@ -52,6 +52,7 @@ fun AppTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
     content: @Composable () -> Unit
 ) {
+
     val colors =
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
             if (darkTheme) DarkColorPalette else LightColorPalette

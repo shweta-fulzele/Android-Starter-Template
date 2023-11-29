@@ -1,4 +1,4 @@
-package com.base.androidstartertemplate.utility.networkstate
+package com.base.androidstartertemplate.receiver
 
 import android.annotation.SuppressLint
 import android.content.BroadcastReceiver
