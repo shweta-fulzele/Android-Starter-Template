@@ -1,31 +1,57 @@
 package com.base.androidstartertemplate.presentation.components
 
-
+import android.graphics.fonts.Font
+import android.graphics.fonts.FontFamily
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.res.stringResource
-import androidx.compose.ui.text.TextStyle
-import com.base.androidstartertemplate.R
-import com.base.androidstartertemplate.presentation.annotation.MultiplePreviews
-import com.base.androidstartertemplate.presentation.extension.h1Medium
+import androidx.compose.ui.text.style.TextAlign
+import com.base.androidstartertemplate.utility.annotation.MultiplePreviews
+import com.base.androidstartertemplate.ui.theme.AppTheme
+import com.base.androidstartertemplate.ui.theme.errorRed
 
 
 @Composable
-fun CustomHeadline1(modifier: Modifier = Modifier, text : Int, color: Color = Color.Black) {
+fun TitleBold(text: String,
+              color: Color = AppTheme.colors.primary,
+              modifier: Modifier = Modifier) {
     Text(
-        text = stringResource(text),
-        style = TextStyle.Default.h1Medium(),
+        text = text,
+        style = MaterialTheme.typography.titleLarge,
         modifier = modifier,
-        color = color
+        color = color,
+
     )
-    
-//    Icon(painter = painterResource(id = Icons.Default.Add), contentDescription = )
+}
+
+@Composable
+fun TextMedium(text: String,
+               color: Color,
+               modifier: Modifier = Modifier, alignment: TextAlign = TextAlign.Center) {
+    Text(
+        text = text,
+        style = MaterialTheme.typography.bodyMedium,
+        modifier = modifier,
+        color = color,
+        textAlign = alignment
+    )
+}
+
+@Composable
+fun ErrorText(text: String,
+              color: Color = errorRed,
+              modifier: Modifier = Modifier) {
+    Text(
+        text = text,
+        style = MaterialTheme.typography.bodyMedium,
+        modifier = modifier,
+        color = color,
+    )
 }
 
 @MultiplePreviews()
 @Composable
-fun PreviewTextStyles(){
-    CustomHeadline1(text = R.string.hello)
+fun PreviewTextStyles() {
 }
