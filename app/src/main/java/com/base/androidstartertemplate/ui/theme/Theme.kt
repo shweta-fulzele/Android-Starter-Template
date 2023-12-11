@@ -28,13 +28,13 @@ import com.google.accompanist.systemuicontroller.rememberSystemUiController
 
 private val LightColorPalette = AppColors(
     primary = primaryLight,
-    secondary = secondaryLight,
+    secondary = secondaryDark,
     transparent = transparent
 )
 
 private val DarkColorPalette = AppColors(
     primary = primaryDark,
-    secondary = secondaryDark,
+    secondary = secondaryLight,
     transparent = transparent
 
 )
