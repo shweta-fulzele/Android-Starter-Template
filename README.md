@@ -60,5 +60,5 @@ Follow these steps to get started with the Android App Starter Template:
 Forked from [https://github.com/shweta-fulzele/Android-Starter-Template](https://github.com/shweta-fulzele/Android-Starter-Template) 
 
 
-**Happy Coding! 🚀**
+**Happy Coding by Shweta Fulzele! 🚀**
 
