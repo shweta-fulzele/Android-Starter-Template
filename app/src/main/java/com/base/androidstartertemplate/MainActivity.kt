@@ -10,7 +10,7 @@ import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
-import com.base.androidstartertemplate.presentation.components.WelcomeText
+import com.base.androidstartertemplate.presentation.components.TitleBold
 import com.base.androidstartertemplate.ui.theme.AppTheme
 import com.base.androidstartertemplate.utility.BaseActivity
 import com.base.androidstartertemplate.utility.addExclamation
@@ -45,7 +45,7 @@ class MainActivity : BaseActivity() {
             systemUiController.setNavigationBarColor(Color.Transparent, darkIcons = iconsDark)
         }
         val modifiedString = name.addExclamation()
-        WelcomeText(text = "Welcome $modifiedString", modifier = modifier)
+        TitleBold(text = "Welcome $modifiedString", modifier = modifier)
     }
 
     @Preview
