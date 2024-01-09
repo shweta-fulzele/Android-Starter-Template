@@ -27,7 +27,7 @@ class MainActivity : BaseActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = AppTheme.colors.secondary
                 ) {
-                    Greeting("Shweta")
+                    Greeting("Demo")
                 }
             }
         }
