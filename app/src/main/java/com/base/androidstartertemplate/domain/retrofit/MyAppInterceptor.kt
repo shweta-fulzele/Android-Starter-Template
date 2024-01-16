@@ -19,9 +19,8 @@ import java.nio.charset.StandardCharsets
 
 
 /**
- * Created by Abhishek Shah on 28 March 2023
+ * Created by Shweta Fulzele on 16 Jan 2024
  *
- * Thinkitive Technologies Pvt. Ltd.
  */
 class MyAppInterceptor(context: Context): Interceptor {
     private var context: Context

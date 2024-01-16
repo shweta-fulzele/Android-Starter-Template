@@ -2,9 +2,8 @@ package com.base.androidstartertemplate.data.dataPref
 
 
 /**
- * Created by Abhishek Shah on 15 November 2022
+ * Created by Shweta Fulzele on 16 Jan 2024
  *
- * Thinkitive Technologies Pvt. Ltd.
  */
 class PreferenceConstants {
     companion object {
