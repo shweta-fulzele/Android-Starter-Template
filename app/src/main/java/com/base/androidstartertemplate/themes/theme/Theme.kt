@@ -1,4 +1,4 @@
-package com.base.androidstartertemplate.ui.theme
+package com.base.androidstartertemplate.themes.theme
 
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
@@ -16,9 +16,9 @@ import androidx.compose.runtime.setValue
 import androidx.compose.runtime.staticCompositionLocalOf
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalConfiguration
-import com.base.androidstartertemplate.ui.AppDimens
-import com.base.androidstartertemplate.ui.smallDimensions
-import com.base.androidstartertemplate.ui.sw360Dimensions
+import com.base.androidstartertemplate.themes.AppDimens
+import com.base.androidstartertemplate.themes.smallDimensions
+import com.base.androidstartertemplate.themes.sw360Dimensions
 import com.google.accompanist.systemuicontroller.rememberSystemUiController
 
 

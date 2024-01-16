@@ -1,9 +1,9 @@
-package com.base.androidstartertemplate.domain.manager
+package com.base.androidstartertemplate.domain.model.manager
 
 import android.database.Observable
 import android.net.ParseException
 import android.util.Log
-import com.base.androidstartertemplate.domain.responseListener.ResponseListener
+import com.base.androidstartertemplate.domain.model.responseListener.ResponseListener
 import com.google.gson.Gson
 import com.google.gson.stream.MalformedJsonException
 import io.reactivex.android.schedulers.AndroidSchedulers
@@ -51,7 +51,7 @@ class NetworkManager {
 // Function to return error received in a proper format
 //    TO log errors and display on ui dialogs
 
-    private fun setUpErrors(t: Throwable): ErrorModel{
+    private fun setUpErrors(t: Throwable): ErrorModel {
         val errorModel = ErrorModel()
         try {
             when (t) {

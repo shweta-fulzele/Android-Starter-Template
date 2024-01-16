@@ -1,4 +1,4 @@
-package com.base.androidstartertemplate.domain.manager
+package com.base.androidstartertemplate.domain.model.manager
 
 import java.sql.Timestamp
 

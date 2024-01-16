@@ -1,6 +1,6 @@
-package com.base.androidstartertemplate.domain.responseListener
+package com.base.androidstartertemplate.domain.model.responseListener
 
-import com.base.androidstartertemplate.domain.manager.ErrorModel
+import com.base.androidstartertemplate.domain.model.manager.ErrorModel
 import java.lang.Error
 
 interface ResponseListener<T> {
