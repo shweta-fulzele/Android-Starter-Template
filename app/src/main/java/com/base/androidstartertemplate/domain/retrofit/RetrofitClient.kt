@@ -37,7 +37,6 @@ abstract class RetrofitClient {
                 .addInterceptor(requestInterceptor) /*Pass header through interceptor*/
                 .addInterceptor(loggingInterceptor) /*Log the response and get refresh token */
                 .build()
-
         }
 
             private val requestInterceptor = Interceptor { chain ->

@@ -1,4 +1,4 @@
-package com.base.androidstartertemplate.ui
+package com.base.androidstartertemplate.themes
 
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp

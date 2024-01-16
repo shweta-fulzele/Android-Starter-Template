@@ -2,6 +2,13 @@ plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
     id("kotlin-kapt")
+    id 'com.google.gms.google-services'
+//    Firebase
+    id 'com.google.firebase.crashlytics'
+
+    // Add the Performance Monitoring Gradle plugin
+    id 'com.google.firebase.firebase-perf'
+
 //    id("com.google.dagger.hilt.android")
 }
 
@@ -75,10 +82,11 @@ ext {
     compose_version = '1.1.0'
 }
 
+
 dependencies {
     implementation 'androidx.core:core-ktx:1.12.0'
-    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.6.2'
-    implementation 'androidx.activity:activity-compose:1.8.1'
+    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.7.0'
+    implementation 'androidx.activity:activity-compose:1.8.2'
     implementation platform('androidx.compose:compose-bom:2023.03.00')
     implementation 'androidx.compose.ui:ui'
     implementation 'androidx.compose.ui:ui-graphics'
@@ -98,7 +106,7 @@ dependencies {
 
     // Adding Network Libraries
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
-    implementation 'com.squareup.okhttp3:okhttp:4.10.0'
+    implementation 'com.squareup.okhttp3:okhttp:4.12.0'
 
     // Adding Converter Libraries
     implementation 'com.squareup.retrofit2:converter-scalars:2.9.0'
@@ -109,5 +117,24 @@ dependencies {
     implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
     implementation 'com.squareup.retrofit2:adapter-rxjava2:2.9.0'
     implementation 'com.squareup.okhttp3:logging-interceptor:4.9.3'
+
+    //   For Firebase BoM (Bill of Material) which controls all the libs used of firebase to provide a single versioning
+    implementation(platform("com.google.firebase:firebase-bom:32.7.0"))
+
+    // Add the dependencies for the Crashlytics and Analytics libraries
+    // When using the BoM, you don't specify versions in Firebase library dependencies
+    implementation("com.google.firebase:firebase-crashlytics")
+    implementation("com.google.firebase:firebase-analytics")
+
+    // Add the dependency for the Performance Monitoring library
+    implementation("com.google.firebase:firebase-perf")
+
+//    Navigation
+    implementation("androidx.navigation:navigation-compose:2.7.6")
+
+
+
+
+
 
 }

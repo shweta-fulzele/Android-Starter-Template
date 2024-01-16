@@ -7,12 +7,18 @@ import android.os.Bundle
 import android.os.PersistableBundle
 import androidx.activity.ComponentActivity
 import com.base.androidstartertemplate.receiver.NetworkStateReceiver
+import com.google.firebase.FirebaseApp
+import com.google.firebase.crashlytics.FirebaseCrashlytics
+
 open class BaseActivity: ComponentActivity() {
 
     private var networkStateReceiver: NetworkStateReceiver? = null
 
     override fun onCreate(savedInstanceState: Bundle?, persistentState: PersistableBundle?) {
         super.onCreate(savedInstanceState, persistentState)
+
+        FirebaseApp.initializeApp(applicationContext);
+        FirebaseCrashlytics.getInstance().setCrashlyticsCollectionEnabled(true);
     }
 
     override fun onResume() {

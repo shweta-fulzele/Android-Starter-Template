@@ -1,4 +1,4 @@
-package com.base.androidstartertemplate.ui.theme
+package com.base.androidstartertemplate.themes.theme
 
 import androidx.compose.ui.graphics.Color
 

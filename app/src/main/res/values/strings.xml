@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">Android-Starter-Template</string>
-    <string name="hello">Hello</string>
-    <string name="welcome">Welcome</string>
+    <string name="home">Home</string>
+    <string name="search">Search</string>
+    <string name="list">List</string>
+    <string name="profile">Profile</string>
 </resources>

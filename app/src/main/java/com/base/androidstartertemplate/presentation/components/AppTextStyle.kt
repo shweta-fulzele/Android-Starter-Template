@@ -6,8 +6,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.style.TextAlign
-import com.base.androidstartertemplate.ui.theme.AppTheme
-import com.base.androidstartertemplate.ui.theme.errorRed
+import com.base.androidstartertemplate.themes.theme.AppTheme
+import com.base.androidstartertemplate.themes.theme.errorRed
 import com.base.androidstartertemplate.utility.annotation.MultiplePreviews
 
 
