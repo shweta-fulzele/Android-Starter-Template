@@ -43,7 +43,7 @@ abstract class RetrofitClient {
                 val url = chain.request()
                     .url
                     .newBuilder()
-                    .addQueryParameter("api_key", "") /*Can add header through interceptors*/
+                    .addQueryParameter("api_key", "") /*Can add header through interceptors or bearer toekn*/
                     .build()
 
                 val request = chain.request()
