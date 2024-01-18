@@ -16,6 +16,9 @@ plugins {
 //     Protobuf
     id "com.google.protobuf" version "0.9.4"
 
+//    KSP
+    id("com.google.devtools.ksp")
+
 }
 
 android {
@@ -168,5 +171,17 @@ dependencies {
     implementation 'androidx.datastore:datastore-preferences-rxjava3:1.0.0'
 
 
+   /* //  Paging Jetpack Compose
+    implementation("androidx.paging:paging-runtime-ktx:3.2.1")
 
+    // RxJava2 support – optional
+    implementation ("androidx.paging : paging - rxjava2 : 3.2.1")
+
+    // Guava ListenableFuture support – optional
+    implementation ("androidx.paging : paging - guava : 3.2.1")*/
+
+//    RoomDB
+    implementation "androidx.room:room-runtime:2.6.1"
+    ksp "androidx.room:room-compiler:2.6.1"
+    implementation "androidx.room:room-ktx:2.6.1"
 }

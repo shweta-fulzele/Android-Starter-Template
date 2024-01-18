@@ -35,10 +35,6 @@ class PreferenceConstants {
 
         const val LOGIN_PREFERENCE = "login_preference"
         const val USER_INFO_PREFERENCE = "user_info_preference"
-        const val CGMACTIVATIONKEY = "cgm_activationkey"
-        const val CGMACTIVATIONNAME = "cgm_activation_name"
-        const val ISCGMACTIVEKEY = "is_cgm_active_key"
-        const val ISCGMACTIVENAME = "is_cgm_active_name"
 
         const val GET_LOGIN_INFO = "get_login_info"
 
@@ -48,8 +44,5 @@ class PreferenceConstants {
 
         const val NOTIFICATIONS_SETTINGS = "notifications_settings"
 
-//        const val HIDE_HABITS_TOOLTIP = "hide_habits_tooltip"
-//
-//        const val HIDE_COACHING_TOOLTIP = "hide_coaching_tooltip"
     }
 }
