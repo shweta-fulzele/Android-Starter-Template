@@ -1,6 +1,9 @@
 buildscript {
+    ext {
+        agp_version = '8.2.0'
+    }
     dependencies {
-        classpath 'com.android.tools.build:gradle:8.1.0'
+        classpath "com.android.tools.build:gradle:$agp_version"
         classpath 'com.google.gms:google-services:4.4.0'
         classpath 'com.google.firebase:firebase-crashlytics-gradle:2.9.9'
     }
@@ -13,5 +16,9 @@ plugins {
 
     // Add the dependency for the Performance Monitoring Gradle plugin
     id 'com.google.firebase.firebase-perf' version '1.4.2' apply false
+
+//    KSP - Kotlin Symbol Processing - Alternative to KAPT - Kotlin Annotation Processing
+    id("com.google.devtools.ksp") version "1.8.10-1.0.9" apply false
+
 
 }
